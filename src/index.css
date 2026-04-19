@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1a2b3c;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 像素风格按钮 */
+.pixel-button {
+  @apply bg-[#ff7f00] text-white py-4 px-8 text-2xl font-['Press_Start_2P'] rounded-md hover:scale-110 transition-transform duration-200 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.5)] active:shadow-none active:translate-x-1 active:translate-y-1;
+}
+
+/* 像素风格容器 */
+.pixel-container {
+  @apply bg-[#2c3e50] p-6 rounded-md border-4 border-[#34495e];
+}
+
+/* 像素风格标题 */
+.pixel-title {
+  @apply font-['Press_Start_2P'] text-[#ff7f00];
+}
+
+/* 像素风格文本 */
+.pixel-text {
+  @apply font-['Press_Start_2P'] text-white;
+}
